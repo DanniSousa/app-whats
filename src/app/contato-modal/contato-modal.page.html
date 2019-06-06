@@ -1,6 +1,6 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>ContatoModal</ion-title>
+    <ion-title>Novo Contato </ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -22,6 +22,11 @@
       <ion-item>
         <ion-label>Url: </ion-label>
         <ion-input [(ngModel)]="novo_contato.url"></ion-input>
+        <img src="" alt = "" (click) = "{{novo_contato.url}}">
+        <ion-button expand="full" (click)="take_picture()">
+          <ion-icon name="camera"></ion-icon>
+        </ion-button>
+
       </ion-item>
 
       <ion-item>
